@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Honk&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
     <header>
@@ -31,10 +32,25 @@
     </header>
     <div class="body2">
         <div class="text-container">
-            <h1 class="text1">GET READY TO EXPLORE THE UNIVERSE</h1>
+            <h1 class="text1"><span id="typed-text"></span></h1>
         </div>
         <img class="img1" src="pikaso_texttoimage_an-astronaut-cartoonish-with-no-human-face-sitting.jpeg" alt="Astronaut Image">
     </div>
     <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var options = {
+                strings: ['GET READY TO EXPLORE THE UNIVERSE'],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true,
+                loopCount: Infinity,
+                showCursor: true,
+                cursorChar: '|'
+            };
+        
+            var typed = new Typed('#typed-text', options);
+        });
+    </script>
 </body>
 </html>
