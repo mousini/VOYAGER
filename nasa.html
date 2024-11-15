@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Foldit:wght@100..900&family=Honk&family=Kalnia+Glaze:wght@100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>NASA Voyager</title>
+    <style>
+        /* General Body Styling */
+        body {
+            background-color: black; /* Set background color to black */
+            font-family: Arial, sans-serif; /* Normal font for paragraphs */
+            margin: 0;
+            padding: 0;
+            color: white;
+            overflow-y: auto; /* Allow vertical scrolling */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Changed from center to top to prevent squeezing */
+            height: auto; /* Allow height to expand with content */
+            min-height: 100vh; /* Ensure page is at least as tall as the viewport */
+            animation: float 4s ease-in-out infinite; /* Floating animation */
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        /* Header and Text Styling */
+        header {
+            width: 80%;
+            margin-top: 30px;
+        }
+
+        .nasa {
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .text1 {
+            font-size: 3em;
+            font-weight: 100;
+            text-align: center;
+            color: #fff;
+            animation: slideIn 2s ease-in-out;
+        }
+
+        /* Fade In Animation */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Slide In Animation */
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        /* Content Styling */
+        .content {
+            width: 80%;
+            margin: 20px;
+            font-size: 1.2em;
+            line-height: 1.6em;
+            animation: fadeInContent 3s ease-in-out;
+        }
+
+        /* Fade In Content Animation */
+        @keyframes fadeInContent {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        h2 {
+            font-size: 2em;
+            font-weight: 700;
+            margin-top: 30px;
+            text-align: center;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif; /* Normal font for paragraphs */
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 600px) {
+            .text1 {
+                font-size: 2em;
+            }
+            .content {
+                width: 90%;
+                font-size: 1em;
+            }
+        }
+
+        /* Footer Styling */
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Audio Section for Music -->
+    <audio autoplay loop>
+        <source src="your-audio-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <header>
+        <nav class="nasa">
+            <p class="text1">What Is NASA?</p>
+        </nav>
+    </header>
+
+    <div class="content">
+        <p>
+            NASA (National Aeronautics and Space Administration) is the United States government agency responsible for the nation's civilian space program and for aeronautics and aerospace research. Founded on July 29, 1958, NASA has been a pioneer in the exploration of space and the advancement of aeronautical technologies. The agency’s main goal is to push the boundaries of human knowledge and explore outer space, while also benefiting life on Earth with new technologies and innovations.
+        </p>
+
+        <h2>NASA's Mission</h2>
+        <p>
+            NASA's mission is to drive human progress by exploring the universe and expanding our knowledge of space, developing advanced space technologies, pushing the limits of human capabilities, and conducting research that benefits life on Earth.
+        </p>
+
+        <h2>History of NASA</h2>
+        <p>
+            <strong>Pre-NASA Era:</strong> Before NASA was established, space exploration was primarily a military endeavor under programs like the U.S. Air Force’s missile programs and the work of early space pioneers like Dr. Wernher von Braun.
+        </p>
+        <p>
+            <strong>The Space Race:</strong> In the 1960s, during the Cold War, the U.S. entered a "Space Race" with the Soviet Union, aiming to lead in space exploration. NASA was at the forefront of this, and the Apollo program achieved the ultimate goal: landing the first humans on the Moon in 1969.
+        </p>
+        <p>
+            <strong>Modern NASA:</strong> Today, NASA continues its mission with projects like the Mars rovers, the International Space Station (ISS), and the James Webb Space Telescope, among many others.
+        </p>
+
+        <h2>Major NASA Achievements</h2>
+        <p>
+            <strong>Apollo Program:</strong> NASA successfully landed humans on the Moon for the first time in 1969 with Apollo 11, and subsequent missions (Apollo 12–Apollo 17) furthered our understanding of the Moon and space travel.
+        </p>
+        <p>
+            <strong>Mars Rovers:</strong> NASA’s rovers, like Curiosity and Perseverance, have been exploring the surface of Mars to discover signs of past life and collect vital data about the Red Planet’s habitability.
+        </p>
+        <p>
+            <strong>International Space Station (ISS):</strong> Since 1998, NASA has played a key role in the development and maintenance of the ISS, a multinational collaboration to study space and human adaptation to long-duration missions in orbit.
+        </p>
+
+        <h2>NASA’s Contributions to Science and Technology</h2>
+        <p>
+            NASA has developed numerous technologies that have directly impacted life on Earth, such as satellite technology, GPS systems, water filtration, fire-resistant clothing, and memory foam mattresses.
+        </p>
+
+        <h2>NASA's Future and Ongoing Missions</h2>
+        <p>
+            NASA's future is centered around further exploration, particularly the Artemis Program (returning humans to the Moon by the mid-2020s), Mars Exploration, and space tourism through partnerships with companies like SpaceX and Blue Origin.
+        </p>
+
+        <h2>Why NASA Matters</h2>
+        <p>
+            NASA represents humanity's desire to explore and understand the universe. Through its groundbreaking missions, scientific discoveries, and technological innovations, NASA has helped shape the modern world and continues to inspire future generations.
+        </p>
+
+        <h2>Conclusion</h2>
+        <p>
+            NASA’s accomplishments extend beyond space exploration and have left an indelible mark on science, technology, and humanity's future. Whether sending astronauts to the Moon or studying distant galaxies, NASA's work continues to inspire and improve life on Earth while preparing us for the future of space exploration.
+        </p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 NASA . All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
